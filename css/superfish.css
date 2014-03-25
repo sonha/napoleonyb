@@ -1,0 +1,137 @@
+nav {
+    position: relative;
+    margin: 0px 0 0 0;
+    float: right;
+}
+
+.sf-menu ul {
+    position: absolute;
+    top: -999px;
+    display: none;
+}
+
+.sf-menu ul li {
+    width: 100%
+}
+
+.sf-menu li {
+    float: left;
+    position: relative
+}
+
+.sf-menu>li>a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 20px 26px 20px;
+    letter-spacing: -1px;
+    background: url('../images/nav_li.jpg') 0 -100px repeat-x;
+}
+
+.sf-menu>li>a:hover, .sf-menu>li.current>a, .sf-menu>li.sfHover>a {
+    color: #1db5ff;
+    background-position: 0 0;
+}
+
+.sf-menu>li {
+    background: url('../images/nav_li1.jpg') no-repeat;
+    padding-left: 2px;
+}
+
+.sf-menu a {
+    color: #a4a5a5;
+}
+
+.sf-menu li ul, .sf-menu li.sfHover ul {
+    left: 0;
+    top: 76px;
+    width: 200px;
+    padding: 1px 0 0 0;
+    z-index: 99;
+    background: #3c3c3c;
+}
+
+.sf-menu li ul li {
+    border-bottom: 1px solid #505050;
+    background: url('../images/nav_marker.png') 22px 12px no-repeat;
+}
+
+.sf-menu li ul li:hover {
+    background-position: -20px 12px;
+}
+
+.sf-menu li ul li a {
+    padding: 5px 0 8px 36px;
+    display: block;
+}
+
+.sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a {
+    color: #fff;
+}
+
+.sf-menu li li ul {
+    left: 201px !important;
+    top: -1px !important;
+}
+
+.sf-menu li a .menu-arrow {
+    display: block;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    text-indent: -100%;
+    font-size: 0;
+    line-height: 0;
+    background: url('../images/menu_arrow.png') no-repeat;
+    vertical-align: middle;
+}
+
+.sf-menu li li a .menu-arrow {
+    display: block;
+    width: 5px;
+    height: 3px;
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: 15px;
+    text-indent: -100%;
+    font-size: 0;
+    line-height: 0;
+    background: url('../images/menu_arrow.png') no-repeat;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        float: none;
+        font: 12px/15px Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 20px 0 0;
+    }
+
+    nav:before {
+        content: 'Menu:';
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .sf-menu {
+        display: none;
+    }
+
+    nav select {
+        font: 12px/15px Arial, Helvetica, sans-serif;
+        color: #464646;
+        width: 100%;
+        outline: none;
+        padding: 5px;
+        border: 2px solid #9e9e9e;
+    }
+}

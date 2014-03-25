@@ -1,0 +1,12 @@
+.head_wrap, header, .button, .serv_list>li>figure {
+    behavior: url(js/PIE.htc);
+    position: relative;
+}
+
+.sf-menu>li>a, .button {
+    letter-spacing: -1px;
+}
+
+.flexslider {
+    overflow: hidden;
+}

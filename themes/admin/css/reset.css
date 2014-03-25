@@ -1,0 +1,168 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+---------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    /*content:none;*/
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* reset extra padding in Firefox */
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.popup-quickview{
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%; 
+    border: 1px solid #fff;
+    background: #eae5e5;
+    
+}
+.popup-quickview th{
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1326d6;
+    text-align: left;
+    width: 25%;
+}
+.popup-quickview td{
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: #e0f2f0;
+}
+.quick-left{
+    font-weight: bold;
+    background-color: #d8d7bc;
+}
+.tbl-suggest{
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%; 
+    border: 1px solid #fff;
+    background-color: #f7eff5;
+}
+.tbl-suggest th{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1326d6;
+    text-align: left;
+    background-color: #d8c7b0;
+    width: 25%;
+}
+.tbl-suggest td{
+    padding: 2px;
+    border: 1px solid #fff;
+    color:#392812; 
+}
+.td-chan{
+    background-color: #e0f2f0;
+}
+#suggest-a{
+    font-size: 11.5px;
+    color: #24519b;
+}
+#suggest-a:hover{
+    color: #da3fcd;
+}
+.top-popup{
+    background-color: #434343;
+    color: #ff9;
+}

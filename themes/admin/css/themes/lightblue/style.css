@@ -1,0 +1,539 @@
+/**
+ * Header
+ */
+#wrapper > header {
+    background-color: #555555;    
+    background-image: -o-linear-gradient(top, #555555, #333333);
+    background-image: -ms-linear-gradient(top, #555555, #333333);
+    background-image: -moz-linear-gradient(top, #555555, #333333);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#333333));
+    background-image: -webkit-linear-gradient(top, #555555, #333333);
+    background-image: linear-gradient(top, #555555, #333333);
+    -pie-background: linear-gradient(top, #555555, #333333);
+}
+/*
+#main-navigation > li.active {
+	background-color: #555555;
+	background-image: -o-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #555555), -o-linear-gradient(left, #ABC, #555555 3%, #555555 97%, #ABC);
+	background-image: -ms-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #555555), -ms-linear-gradient(left, #ABC, #555555 3%, #555555 97%, #ABC);
+	background-image: -moz-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #555555), -moz-linear-gradient(left, #ABC, #555555 3%, #555555 97%, #ABC);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ABC), color-stop(10%, rgba(234, 238, 243, 0.2)), color-stop(100%, #555555)), -webkit-gradient(linear, left center, right center, color-stop(0%, #ABC), color-stop(3%, #555555), color-stop(97%, #555555), color-stop(100%, #ABC));
+	background-image: -webkit-linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #555555), -webkit-linear-gradient(left, #ABC, #555555 3%, #555555 97%, #ABC);
+	background-image: linear-gradient(#ABC, rgba(234, 238, 243, 0.2) 10%, #555555), linear-gradient(left, #ABC, #555555 3%, #555555 97%, #ABC);
+}
+*/
+
+/**
+ * Contents
+ */
+#wrapper > section > section > header h1,
+#wrapper > section > section > .viewport > header h1{
+	color: #567;
+	line-height: 30px;
+	margin: 0;
+	text-shadow: #FFF 0 1px 2px;
+}
+
+/**
+ * Elements
+ */
+.fc-event-skin {
+    background-color: #555555;
+    background-image: -o-linear-gradient(top, #555555, #333333);
+    background-image: -ms-linear-gradient(top, #555555, #333333);
+    background-image: -moz-linear-gradient(top, #555555, #333333);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#333333));
+    background-image: -webkit-linear-gradient(top, #555555, #333333);
+    background-image: linear-gradient(top, #555555, #333333);
+    zoom: 1;
+}
+
+
+/* ======================== WIDGETS ======================== */
+
+#calhead,
+.fc-widget-header,
+table.display thead tr,
+table.display tfoot tr,
+.tabs > ul > li > a,
+.accordion > header,
+.portlet > header {
+    background-color: #F4F4F4;
+    background-image: -o-linear-gradient(top, #FCFCFC, #F4F4F4);
+    background-image: -ms-linear-gradient(top, #FCFCFC, #F4F4F4);
+    background-image: -moz-linear-gradient(top, #FCFCFC, #F4F4F4);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#F4F4F4));
+    background-image: -webkit-linear-gradient(top, #FCFCFC, #F4F4F4);
+    background-image: linear-gradient(top, #FCFCFC, #F4F4F4);
+    text-shadow: 0 1px 0 #FFF;
+    zoom: 1;
+}
+
+.lte8 #calhead,
+.lte8 .fc-widget-header,
+.lte8 table.display thead tr,
+.lte8 table.display tfoot tr,
+.lte8 .tabs > ul > li > a,
+.lte8 .accordion > header,
+.lte8 .portlet > header {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FCFCFC,endColorstr=#F4F4F4);
+}
+
+.portlet > header h2 {
+    color: #999;
+    text-shadow: 0 1px 0 #FFF;
+}
+
+.portlet > section {
+    background: #FFF;
+    border-color: #CCC;
+}
+
+/**
+ * Tabs
+ */
+.tabs > ul > li > a:hover {
+    background-color: #F2F2F2;
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -ms-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: linear-gradient(top, #FFF, #F2F2F2);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#F2F2F2);
+    zoom: 1;
+}
+
+.tabs > ul > li > a.current {
+    background-color: #FFF;
+	background-image: -o-linear-gradient(#EEE, rgba(234, 238, 243, 0.2) 10%, #FFF), -moz-linear-gradient(left, #DBDBDB, #FFF 3%, #FFF 97%, #DBDBDB);
+	background-image: -ms-linear-gradient(#EEE, rgba(234, 238, 243, 0.2) 10%, #FFF), -moz-linear-gradient(left, #DBDBDB, #FFF 3%, #FFF 97%, #DBDBDB);
+	background-image: -moz-linear-gradient(#EEE, rgba(234, 238, 243, 0.2) 10%, #FFF), -moz-linear-gradient(left, #DBDBDB, #FFF 3%, #FFF 97%, #DBDBDB);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEE), color-stop(10%, rgba(234, 238, 243, 0.2)), color-stop(100%, #FFF)), -webkit-gradient(linear, left center, right center, color-stop(0%, #DBDBDB), color-stop(3%, #FFF), color-stop(97%, #FFF), color-stop(100%, #DBDBDB));
+	background-image: -webkit-linear-gradient(#EEE, rgba(234, 238, 243, 0.2) 10%, #FFF), -moz-linear-gradient(left, #DBDBDB, #FFF 3%, #FFF 97%, #DBDBDB);
+	background-image: linear-gradient(#EEE, rgba(234, 238, 243, 0.2) 10%, #FFF), -moz-linear-gradient(left, #DBDBDB, #FFF 3%, #FFF 97%, #DBDBDB);
+    filter: none;
+    border-color: #CCC;
+    border-bottom-color: #FFF;
+    color: #39F;
+    zoom: 1;
+}
+
+.tabs > section {
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+.tabs.side > ul > li > a.current {
+    background: #FFF;
+    border-color: #CCC;
+    border-right-color: #FFF;
+}
+
+/**
+ * Accordion
+ */
+.accordion {
+    border-color: #CCC;
+}
+
+.accordion > header {
+    border-color: #CCC;
+    zoom: 1;
+}
+
+.accordion > header:hover {
+    background-color: #F2F2F2;
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -ms-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: linear-gradient(top, #FFF, #F2F2F2);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#F2F2F2);
+    zoom: 1;
+}
+
+.accordion > header h2 {
+    color: #999;
+    text-shadow: 0 1px 0 #FFF;
+}
+
+.accordion > section {
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+/* ======================== WIDGETS END ======================== */
+
+/**
+ * Buttons
+ */
+.mceEditor.defaultSkin .mceToolbar,
+.mceEditor.defaultSkin .mceStatusbar,
+.fc-button.fc-state-default .fc-button-inner,
+.paging_full_numbers span.paginate_button,
+.paging_full_numbers span.paginate_active,
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+.button,.search-button,
+.pagination li a,
+.toolbar li a,
+.selector,
+.uploader span.action,
+.checker,
+.radio,
+.paging_full_numbers span.paginate_button,
+.paging_full_numbers span.paginate_active {
+    background-color: #EEE;
+    background-image: -o-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: -ms-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: -moz-linear-gradient(top, #FEFEFE, #EEE);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EEE));
+    background-image: -webkit-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: linear-gradient(top, #FEFEFE, #EEE);
+    border-color: #AAA;
+    -moz-box-shadow: inset 0 1px 0 #FFF, 0 1px 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 0 #FFF, 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: inset 0 1px 0 #FFF, 0 1px 3px rgba(0,0,0,0.15);
+    color: #111;
+    text-shadow: 0 1px 0 #FFF;
+}
+.search-button{float:right;}
+.lte8 .mceEditor.defaultSkin .mceToolbar,
+.lte8 .mceEditor.defaultSkin .mceStatusbar,
+.lte8 .fc-button.fc-state-default .fc-button-inner,
+.lte8 .paging_full_numbers span.paginate_button,
+.lte8 .paging_full_numbers span.paginate_active,
+.lte8 input[type=button],
+.lte8 input[type=submit],
+.lte8 input[type=reset],
+.lte8 button,
+.lte8 .button,.search-button,
+.lte8 .pagination li a,
+.lte8 .toolbar li a,
+.lte8 .selector,
+.lte8 .uploader span.action,
+.lte8 .checker,
+.lte8 .radio,
+.lte8 .paging_full_numbers span.paginate_button,
+.lte8 .paging_full_numbers span.paginate_active {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FEFEFE,endColorstr=#EEEEEE);
+    zoom: 1;
+}
+
+.mceEditor.defaultSkin .mceToolbar {
+    margin-bottom: 4px;
+}
+
+.fc-button.fc-state-default:hover .fc-button-inner,
+.paging_full_numbers span.paginate_button:hover,
+.paging_full_numbers span.paginate_active:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover,
+.button:hover,.search-button:hover,
+.pagination li a:hover,
+.toolbar li a:hover,
+.selector:hover,
+.selector.hover,
+.uploader.hover span.action,
+.checker:hover,
+.checker.hover,
+.radio:hover,
+.radio.hover,
+.paging_full_numbers span.paginate_button:hover,
+.paging_full_numbers span.paginate_active:hover {
+    background-color: #F2F2F2;
+    background-image: -o-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -ms-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: -moz-linear-gradient(top, #FFF, #F2F2F2);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, #FFF, #F2F2F2);
+    background-image: linear-gradient(top, #FFF, #F2F2F2);
+    border-color: #888;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.lte8 .fc-button.fc-state-default:hover .fc-button-inner,
+.lte8 .paging_full_numbers span.paginate_button:hover,
+.lte8 .paging_full_numbers span.paginate_active:hover,
+.lte8 input[type=button]:hover,
+.lte8 input[type=submit]:hover,
+.lte8 input[type=reset]:hover,
+.lte8 button:hover,
+.lte8 .button:hover,.search-button:hover,
+.lte8 .pagination li a:hover,
+.lte8 .toolbar li a:hover,
+.lte8 .selector:hover,
+.lte8 .selector.hover,
+.lte8 .uploader.hover span.action,
+.lte8 .checker:hover,
+.lte8 .checker.hover,
+.lte8 .radio:hover,
+.lte8 .radio.hover,
+.lte8 .paging_full_numbers span.paginate_button:hover,
+.lte8 .paging_full_numbers span.paginate_active:hover {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#F2F2F2);
+    zoom: 1;
+}
+
+.fc-button.fc-state-default:focus .fc-button-inner,
+.paging_full_numbers span.paginate_button:focus,
+.paging_full_numbers span.paginate_active:focus,
+input[type=button]:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus,
+.button:focus,.search-button:focus,
+.pagination li a:focus,
+.toolbar li a:focus,
+.selector:focus,
+.selector.focus,
+.uploader.focus span.action,
+.checker:focus,
+.checker.focus,
+.radio:focus,
+.radio.focus,
+.paging_full_numbers span.paginate_button:focus,
+.paging_full_numbers span.paginate_active:focus {
+    background-color: #EEE;
+    background-image: -o-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: -ms-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: -moz-linear-gradient(top, #FEFEFE, #EEE);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EEE));
+    background-image: -webkit-linear-gradient(top, #FEFEFE, #EEE);
+    background-image: linear-gradient(top, #FEFEFE, #EEE);
+    border-color: #AAA;
+}
+
+.lte8 .fc-button.fc-state-default:focus .fc-button-inner,
+.lte8 .paging_full_numbers span.paginate_button:focus,
+.lte8 .paging_full_numbers span.paginate_active:focus,
+.lte8 input[type=button]:focus,
+.lte8 input[type=submit]:focus,
+.lte8 input[type=reset]:focus,
+.lte8 button:focus,
+.lte8 .button:focus,.search-button:focus,
+.lte8 .pagination li a:focus,
+.lte8 .toolbar li a:focus,
+.lte8 .selector:focus,
+.lte8 .selector.focus,
+.lte8 .uploader.focus span.action,
+.lte8 .checker:focus,
+.lte8 .checker.focus,
+.lte8 .radio:focus,
+.lte8 .radio.focus,
+.lte8 .paging_full_numbers span.paginate_button:focus,
+.lte8 .paging_full_numbers span.paginate_active:focus {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FEFEFE,endColorstr=#EEEEEE);
+    zoom: 1;
+}
+
+.fc-button.fc-state-active .fc-button-inner,
+.fc-button.fc-state-default.fc-state-active:hover .fc-button-inner,
+.fc-button.fc-state-default:active .fc-button-inner,
+.paging_full_numbers span.paginate_button:active,
+.paging_full_numbers span.paginate_active:active,
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active,
+.button:active,.search-button:active,
+.pagination li a:active,
+.toolbar li a:active,
+.toolbar li.current a,
+.toolbar li.current a:hover,
+.selector:active,
+.selector.active,
+.uploader.active span.action,
+.checker:active,
+.checker.active,
+.radio:active,
+.radio.active,
+.paging_full_numbers span.paginate_button:active,
+.paging_full_numbers span.paginate_active:active {
+    background-color: #EAEAEA;
+    background-image: -o-linear-gradient(top, #FAFAFA, #EAEAEA);
+    background-image: -ms-linear-gradient(top, #FAFAFA, #EAEAEA);
+    background-image: -moz-linear-gradient(top, #FAFAFA, #EAEAEA);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EAEAEA));
+    background-image: -webkit-linear-gradient(top, #FAFAFA, #EAEAEA);
+    background-image: linear-gradient(top, #FAFAFA, #EAEAEA);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 1px 0px rgba(255,255,255,0.2);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3), 0 1px 0px rgba(255,255,255,0.2);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3), 0 1px 0px rgba(255,255,255,0.2);
+}
+
+.lte8 .fc-button.fc-state-active .fc-button-inner,
+.lte8 .fc-button.fc-state-default.fc-state-active:hover .fc-button-inner,
+.lte8 .fc-button.fc-state-default:active .fc-button-inner,
+.lte8 .paging_full_numbers span.paginate_button:active,
+.lte8 .paging_full_numbers span.paginate_active:active,
+.lte8 input[type=button]:active,
+.lte8 input[type=submit]:active,
+.lte8 input[type=reset]:active,
+.lte8 button:active,
+.lte8 .button:active,.search-button:active,
+.lte8 .pagination li a:active,
+.lte8 .toolbar li a:active,
+.lte8 .toolbar li.current a,
+.lte8 .toolbar li.current a:hover,
+.lte8 .selector:active,
+.lte8 .selector.active,
+.lte8 .uploader.active span.action,
+.lte8 .checker:active,
+.lte8 .checker.active,
+.lte8 .radio:active,
+.lte8 .radio.active,
+.lte8 .paging_full_numbers span.paginate_button:active,
+.lte8 .paging_full_numbers span.paginate_active:active {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FAFAFA,endColorstr=#EAEAEA);
+    zoom: 1;
+}
+
+.fc-button.fc-state-disabled .fc-button-inner,
+.fc-button.fc-state-disabled:hover .fc-button-inner,
+.fc-button.fc-state-disabled:active .fc-button-inner,
+input[type=button]:disabled,
+input[type=button]:hover:disabled,
+input[type=button]:focus:disabled,
+input[type=button]:active:disabled,
+input[type=submit]:disabled,
+input[type=submit]:hover:disabled,
+input[type=submit]:focus:disabled,
+input[type=submit]:active:disabled,
+input[type=reset]:disabled,
+input[type=reset]:hover:disabled,
+input[type=reset]:focus:disabled,
+input[type=reset]:active:disabled,
+button:disabled,
+button:hover:disabled,
+button:focus:disabled,
+button:active:disabled,
+.button.disabled,.search-button.disabled,
+.pagination li a.disabled,
+.toolbar li a.disabled,
+.selector.disabled,
+.selector.disabled:hover,
+.selector.disabled:focus,
+.selector.disabled:active,
+.uploader.disabled span.action,
+.checker.disabled,
+.checker.disabled:hover,
+.checker.disabled:focus,
+.checker.disabled:active,
+.radio.disabled,
+.radio.disabled:hover,
+.radio.disabled:focus,
+.radio.disabled:active {
+    border-color: #DDD;
+    background: #EAEAEA;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    filter: none;
+    color: #777;
+}
+
+.pagination li.current a,
+.paging_full_numbers span.paginate_active {
+    background: #FFF;
+    filter: none;
+}
+
+.radio span.checked {
+    background-color: #555555;
+    box-shadow: inset 0 1px 3px #111;
+}
+
+.checker span {
+    background: url(../../../images/check.png) no-repeat -14px 0;
+}
+
+.checker span.checked {
+    background-position: 0 0;
+}
+
+table.items {
+    border: 1px solid #CCCCCC;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+}
+table.items tr {
+    position: relative;
+}
+table.items thead tr, table.items tfoot tr {
+    filter: none !important;
+}
+table.items thead th {
+    border-bottom: 1px solid #CCCCCC;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px;
+}
+table.items thead th a {
+    color: #000000;
+    padding: 0 17px 0 2px;
+}
+table.items tfoot th {
+    border-top: 1px solid #CCCCCC;
+    font-weight: bold;
+    padding: 3px 18px 3px 10px;
+}
+table.items thead th:not(:last-child), table.items tfoot th:not(:last-child) {
+    border-right: 1px solid #CCCCCC;
+    box-shadow: 1px 1px #FFFFFF inset;
+}
+table.items tr.heading2 td {
+    border-bottom: 1px solid #AAAAAA;
+}
+table.items td {
+    padding: 3px 10px;
+}
+table.items td.center {
+    text-align: center;
+}
+
+.sorting_asc, .asc {
+    background-position: 100% -50%;
+}
+
+.sorting_desc, .desc{background-position: right bottom;}
+
+table.detail-view {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+table.detail-view th, table.detail-view td {
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    vertical-align: top;
+}
+table.detail-view th {
+    text-align: right;vertical-align: middle;
+    width: 160px;white-space: nowrap;
+}
+table.detail-view tr.odd {
+    background: none repeat scroll 0 0 #F5F5F5;
+}
+table.detail-view tr.even {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+div.form label {
+    font-weight: normal !important;
+    font-size: 1.1em !important;
+}
+
+div.form select{padding:5px;}
+tr.odd {
+    background-color: #E2E4FF;
+}
