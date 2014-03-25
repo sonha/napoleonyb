@@ -2,7 +2,7 @@
 class AdminController extends CController
 {
     public $heading='';
-    public $layout='column1';
+    public $layout='main_napo';
     public $menu=array();
     public $breadcrumbs=array();
 

@@ -4,7 +4,7 @@
         array(
             'name'     => 'Shoe Shop',
             'language' => 'vi',
-            'defaultController' => 'product',
+            'defaultController' => 'napoleon',
         )
     );
 ?>
