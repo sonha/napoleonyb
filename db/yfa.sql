@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50524
 File Encoding         : 65001
 
-Date: 2013-05-31 16:29:21
+Date: 2014-04-05 10:22:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,7 +28,7 @@ CREATE TABLE `category` (
   PRIMARY KEY (`id`),
   KEY `FK_category_category` (`parentId`),
   CONSTRAINT `FK_category_category` FOREIGN KEY (`parentId`) REFERENCES `category` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of category
@@ -57,18 +57,20 @@ CREATE TABLE `product` (
   PRIMARY KEY (`id`),
   KEY `FK_product_category` (`categoryId`),
   CONSTRAINT `FK_product_category` FOREIGN KEY (`categoryId`) REFERENCES `category` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of product
 -- ----------------------------
-INSERT INTO `product` VALUES ('1', '1', 'Kaolin phong hóa', '', '0', '2013-05-31 14:05:31', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('2', '1', 'Kaolin men', '', '0', '2013-05-31 14:05:31', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('3', '1', 'Talc A1', '', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('4', '1', 'Talc A2', '', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('5', '1', 'Talc B', '', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('6', '1', 'Fenpat YFA1', '', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, null, null);
-INSERT INTO `product` VALUES ('7', '1', 'Fenpat YFA2', '', '0', '2013-05-31 14:05:33', '0', '0', '0', '0', null, null, null);
+INSERT INTO `product` VALUES ('1', '1', 'Kaolin phong hóa', '/upload/2013-06-05/kaolin phong hoa.jpg', '0', '2013-05-31 14:05:31', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('2', '1', 'Kaolin men', '/upload/2013-06-05/Kaolin YFA1 (2).jpg', '0', '2013-05-31 14:05:31', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('3', '1', 'Talc A1', '/upload/2013-06-05/Talc1.jpg', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('4', '1', 'Talc A2', '/upload/2013-06-05/kaolin phong hoa.jpg', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('5', '1', 'Talc B', '/upload/2013-06-05/Talc1.jpg', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('6', '1', 'Fenpat YFA1', '/upload/2013-06-05/Fenspat YFA1.jpg', '0', '2013-05-31 14:05:32', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('7', '1', 'Fenpat YFA2', '/upload/2013-06-05/Fenspat YFA2.jpg', '0', '2013-05-31 14:05:33', '0', '0', '0', '0', null, '', '');
+INSERT INTO `product` VALUES ('8', '2', 'baba', '', '34', '2014-03-24 16:18:29', '1', '1', '0', '0', null, '<p>\r\n	fgfg</p>\r\n', '<p>\r\n	baba</p>\r\n');
+INSERT INTO `product` VALUES ('9', '1', 'babartrt', '/upload/2014-03-24/Jellyfish.jpg', '34', '2014-03-24 16:20:05', '1', '0', '1', '3', null, '<p>\r\n	fdfdf</p>\r\n', '<p>\r\n	dfd</p>\r\n');
 
 -- ----------------------------
 -- Table structure for `sh_categories`
@@ -126,15 +128,15 @@ CREATE TABLE `sh_company_info` (
   `email2` varchar(500) DEFAULT NULL,
   `website` varchar(500) DEFAULT NULL,
   `facebook` varchar(500) DEFAULT NULL,
-  `desc1` varchar(500) DEFAULT NULL,
-  `desc2` varchar(500) DEFAULT NULL,
+  `desc1` text,
+  `desc2` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sh_company_info
 -- ----------------------------
-INSERT INTO `sh_company_info` VALUES ('1', 'Công ty TNHH YFA', 'Thị trấn Thanh Thủy- Thanh Thủy- Phú Thọ', 'Cự Lộc - Thanh Xuân - Hà Nội', '02103.877.552', '02103.877.552', 'sonha@gmail.com', 'hason61vN@gmail.com', 'http://yfa.com.vn/', 'http://www.facebook.com/yfa', 'YFA luôn luôn tìm kiếm mở rộng kinh doanh của chúng tôi và tìm kiếm đối tác mới, quốc gia và những\r\n                    người quốc tế. Hơn nữa, YFA luôn luôn tôn trọng hỗ trợ và đóng góp của người bạn đời và có cơ hội để\r\n                    làm việc chặt chẽ với các đối tác càng nhiều càng tốt. YFA đảm bảo rằng chúng tôi luôn cung cấp\r\n                    những sản phẩm có chất lượng cao và giá cả hợp lý.', 'YFA Công ty TNHH là một công ty khai thác khoáng sản resourse chuyên ngành khai thác\r\n                        mỏ, xử lý và cung cấp các tài liệu của các Caolins và Feldspars ngành công nghiệp giấy, gốm và\r\n                        sơn.\r\n                        YFA hiện nay đã trở thành một trong những nhà cung cấp nổi tiếng để cung cấp nguyên liệu hoàn\r\n                        thành.</p>\r\n                    YFA nằm ở huyện Thanh Thủy, Phú Thọ, khoảng 100 Km phía đông bắc từ hà nội, thành phố thủ');
+INSERT INTO `sh_company_info` VALUES ('1', 'Công ty TNHH YFA', 'Thị trấn Thanh Thủy- Thanh Thủy- Phú Thọ', 'Cự Lộc - Thanh Xuân - Hà Nội', '02103.877.552', '02103.877.552', 'sonha@gmail.com', 'hason61vN@gmail.com', 'http://yfa.com.vn/', 'http://www.facebook.com/yfa', 'YFA luôn luôn tìm kiếm mở rộng kinh doanh của chúng tôi và tìm kiếm đối tác mới, quốc gia và những\r\n                    người quốc tế. Hơn nữa, YFA luôn luôn tôn trọng hỗ trợ và đóng góp của người bạn đời và có cơ hội để  làm việc chặt chẽ với các đối tác càng nhiều càng tốt.                        YFA đảm bảo rằng chúng tôi luôn cung cấp\r\n', 'YFA Công ty TNHH là một công ty khai thác khoáng sản resourse chuyên ngành khai thác\r\n                        mỏ, xử lý và cung cấp các tài liệu của các Caolins và Feldspars ngành công nghiệp giấy, gốm và\r\n                        sơn.\r\n                        YFA hiện nay đã trở thành một trong những nhà cung cấp nổi tiếng để cung cấp nguyên liệu hoàn\r\n                        thành.</p>\r\n                    YFA nằm ở huyện Thanh Thủy, Phú Thọ, khoảng 100 Km phía đông bắc từ hà nội, thành phố thủ đô của Việt Nam. Khu vực này là rất thuận tiện cho việc cải thiện du lịch y tế, và đặc biệt là phát triển doanh nghiệp. Kể từ khi thành lập công ty vào năm 2003, YFA đã độc lập xử lý và sản xuất một số sản phẩm chất lượng cao, chẳng hạn như Caolins tráng men và Caolins cơ thể. Những sản phẩm này được sử dụng không chỉ trong các ngành công nghiệp gốm sứ mà còn trong nhiều lĩnh vực khác nhau như giấy và các ngành công nghiệp sơn. Sản phẩm YFA đã được bán trên khắp các quốc gia, và đã thu hút được nhiều khách hàng lớn như Tập đoàn Vĩnh Phúc-VPG, nhóm Viglacera, Cosevco Group, Hàn Quốc, Nhật Bản, vv ...');
 
 -- ----------------------------
 -- Table structure for `sh_contact`
